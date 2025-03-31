@@ -1,0 +1,103 @@
+/* Center aligns all <h1> elements */
+h1 {
+    text-align: center;
+}
+
+/* Sets the background color of the body to black */
+body {
+    background-color: black;
+}
+
+/* Styles for the main navigation */
+.mainNavigation {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+    margin-left: auto;
+    text-align: center;
+    padding: 25px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+/* Styles for the header */
+header {
+    display: flex;
+    align-items: center;
+}
+
+/* Styles for the container of the main navigation */
+.mainNavigationContainer {
+    display: flex;
+    align-items: center;
+}
+
+/* Adds margin to <h1> elements */
+h1 {
+    margin-inline: 20px;
+}
+
+/* Styles for buttons including, the border-radius being at a 8px, color being black, and a background color
+of white, along with other properties */
+button {
+    border-radius: 8px;
+    padding: 14px 40px;
+    color: black;
+    background-color: white;
+}
+
+/* Styles for button hover effect like a black bold color effect once mouse hovers over a button */
+button:hover {
+    font-weight: bold;
+    color: black;
+}
+
+/* Styles for the footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+/* Styles for the main content grid */
+.mainContent {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+/* Styles for various text elements */
+ul,p,h1,h2,td,th,
+.footer {
+    font-size: 18pt;
+    color: white;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+/* Styles for form content */
+.formContent {
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+    max-width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Styles for the logo */
+.logo {
+    display: block;
+}
+
+/* Styles for contact information */
+.contactInfo {
+    font-size: 24px;
+    padding: 20px;
+}
+
+
+/*Makes all interactive elements recieve a white border, so to help when focusing 
+and helps identify items when using keyboard navigation*/
+:focus{
+    outline: 5px solid white;
+}

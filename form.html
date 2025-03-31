@@ -1,0 +1,147 @@
+<!-- Instructs web browser about the type of document that follows -->
+<!DOCTYPE html>
+<!-- Specifies the viewport settings for responsive design -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Indicates the document's language, in this case English -->
+<html lang="en">
+    <!-- Contains document's title, metadata, or other elements -->
+    <head>
+        <!-- Describes document's data or how its characters are represented -->
+        <meta charset="UTF-8">
+        <!-- Small icon that will identify website appearing at browser tab -->
+        <link rel="Icon" href="https://44.media.tumblr.com/fc38472d3e2896b6886a217e8c3a0ceb/tumblr_npw8tx7kgI1uvokdeo5_250.gif">
+        <!-- The link tag links the CSS file to this HTML document to perform changes
+        to the way the document looks -->
+        <link href="index.css" rel="stylesheet">
+        <!-- The link tag links the JavaScript file to this HTML document -->
+        <script src="index.js"></script>
+        <!-- Internal CSS defined within the HTML page -->
+        <style>
+            /* Styles for general p text */
+            p {
+                color: black;
+            }
+
+            /* Styles for h2 */
+            h2 {
+                color: black;
+            }
+
+            /* Styles for text alignment */
+            text {
+                text-align: right;
+                margin-right: 20px;
+            }
+
+            /* Styles for form content */
+            .formContent {
+                background-color: white;
+                border: 5px solid black;
+                border-radius: 10px;
+                max-width: 50%;
+                margin: auto;
+                padding: 20px;
+            }
+
+            /* Styles for labels */
+            label {
+                display: inline-block;
+                width: 150px; /* Adjust the width as needed */
+                text-align: left;
+                margin-right: 10px; /* Add some spacing between label and input */
+            }
+
+            /* Styles for input fields and select */
+            input[type="text"],
+            input[type="tel"],
+            textarea,
+            select {
+                display: inline-block;
+                width: calc(100% - 160px); /* Adjust the width according to label width */
+                /* 160px = label width (150px) + margin-right (10px) */
+            }
+        </style>
+    </head>
+
+    <!-- The name of the document and usually displayed in the browser's title bar -->
+    <title>Manga Store</title>
+    
+    <!-- Elements and content to be rendered to the browser -->
+    <body>
+        <!-- Header section of the webpage -->
+        <header>
+            <div class="mainNavigationContainer">
+                <h1>Contact Us</h1>
+                <img id="logo" src="https://44.media.tumblr.com/fc38472d3e2896b6886a217e8c3a0ceb/tumblr_npw8tx7kgI1uvokdeo5_250.gif" alt="Logo of One Piece/Manga Store Website" width="150" height="100" style="visibility: hidden;">
+                <!-- Navigation links -->
+                <nav class="mainNavigation">
+                    <a href="index.html"><button type="button">Home</button></a> 
+                    <a href="manga.html"><button type="button">Manga</button></a>
+                    <a href="games.html"><button type="button">Games</button></a>
+                    <a href="info.html"><button type="button">Info</button></a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Form section of the webpage -->
+        <div class="formContent">
+            <div class="contactInfo">
+                <!-- Contact Information heading -->
+                <h2>Contact Information</h2>
+                
+                <!-- First Name input -->
+                <p>
+                    <label for="first">First Name:</label>
+                    <input type="text" name="first" id="first" placeholder="First Name">
+                </p>
+                
+                <!-- Last Name input -->
+                <p>
+                    <label for="last">Last Name:</label>
+                    <input type="text" name="last" id="last" placeholder="Last Name">
+                </p>
+
+                <!-- Email input -->
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" placeholder="email@gmail.com">
+                </p>
+
+                <!-- Phone Number input -->
+                <p>
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="1111111111">
+                </p>
+
+                <!-- Message input -->
+                <p>
+                    <label for="message">Message:</label>
+                    <textarea name="message" rows="5" cols="40" placeholder="Starts here"></textarea>
+                </p>
+
+                <!-- Subject selection -->
+                <p>
+                    <label for="subject">Subject:</label>
+                    <div class="subject">
+                        <select>
+                            <option value="default">Pick an option:</option>
+                            <option value="generalEnquiries">General enquiries</option>
+                            <option value="advertiseUs">Advertise with us</option>
+                            <option value="notifyDiscounts">Notify us about discounts</option>
+                            <option value="reportIncorrectOffers">Report incorrect offers</option>
+                            <option value="technicalIssues">Technical issues</option>
+                        </select>
+                    </div>
+                </p>
+
+                <!-- Submit button -->
+                <button type="button" onclick="submitForm()">Submit</button>                
+            </div><br>
+        </div>
+
+        <!--A footer is inserted at the bottom webpage indicating trademark-->
+        <footer>
+            <div class="footer">© Copyrights. 2024 Manga Store. All rights reserved. All trademarks are the property of their respective owners.
+        </footer>
+    </body>
+</html>
